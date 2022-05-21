@@ -1,0 +1,15 @@
+Passo a passo do TDD:
+Caso Apenas um tipo de teste:
+1. devemos escrever um teste conforme a especificaçao (historias, requisitos)
+2. rodamos o teste e caso ele falhe, modificamos o programa de forma minima para que o teste possa passar. 
+3. com o teste passando, verificamos se necessita refatoraçao: casno necessite, refatoramos e retornamos ao passo 2 ; caso contrario, retornamos ao passo 1.
+
+Caso combinaçao de testes funcionais e de unidade:
+
+1. escrevemos um teste funcional
+2. executamos e verificamos se o teste passa
+3. caso nao passe, escrevemos um teste de unidade e o executamos
+4. rodamos os testes de unidade, caso falhem, escrevemos um codigo minimo ate que passem
+5. verificamos se necessita refatoraçao: caso sim, refatoramos e voltamos ao passo 4; caso contrario, voltamos ao passo 2 ate que os testes passem.
+6. quando os testes funcionais passarem, verificamos se necessaria a refatoraçao: se sim, vamos ao passo 3; caso contrario, encerramos o ciclo e voltamos ao passo 1
+
