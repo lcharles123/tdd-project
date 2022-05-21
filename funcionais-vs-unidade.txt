@@ -1,0 +1,5 @@
+Testes funcionais testam o sistema como um todo ou grande parte dele, ja testes de unidade testam apenas unidades pequenas como uma classe ou metodo. 
+
+A interface para o teste funcional eh a mesma de uma funcionalidade completa do sistema, ja para o teste de unidade, trata-se de uma assinatura de classe ou metodo.
+
+
