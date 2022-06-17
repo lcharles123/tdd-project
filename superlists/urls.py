@@ -16,11 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path # url() deprecated
 from lists import views
+from accounts import views as accounts_views 
 
 urlpatterns = [
     re_path(r'^$', views.home_page, name='home'),
     re_path(r'^lists/new$', views.new_list, name='new_list'),
     re_path(r'^lists/(\d+)/$', views.view_list, name='view_list'),
+    
+    
+    re_path(r'^accounts/send_email$', accounts_views.send_login_email, name='send_login_email'),
+    re_path(r'^accounts/login$', accounts_views.login, name='login'),
+    re_path(r'^accounts/logout$', accounts_views.logout, name='logout'),
+    
     path('admin/', admin.site.urls),
     
 ]
